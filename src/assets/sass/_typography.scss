@@ -1,0 +1,24 @@
+/* -----------------------
+  Fonts
+-------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Londrina+Solid:400,900|PT+Serif|Permanent+Marker|Rock+Salt');
+
+$pt: 'PT Serif', serif;
+$londrina: 'Londrina Solid', cursive;
+$rockSalt: 'Rock Salt', cursive;
+$permanentMarket: 'Permanent Marker', cursive;
+$courier: "Courier", Arial, sans-serif;
+
+body {
+  font-family: $courier;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+h1, h2, h3, h4 {
+  font-family: $londrina;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  line-height: 100%;
+}

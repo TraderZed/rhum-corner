@@ -1,0 +1,398 @@
+@import "./normalize.css";
+@import "_mixins";
+@import "_colors";
+@import "_typography";
+@import "_globals";
+
+header {
+  background: url('../images/rhumcornermasthead.jpg') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+
+  nav {
+    background: #000;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 1;
+
+    ul {
+      margin: 0 auto;
+      max-width: 1024px;
+      overflow: hidden;
+
+      li {
+        font-size: 11px;
+        margin: 0 11px;
+        display: inline-block;
+
+        a {
+          color: #fff;
+          display: inline-block;
+          opacity: .5;
+          padding: 10px 0;
+          text-transform: uppercase;
+          text-decoration: none;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  h1 {
+    background: url('../images/main_rhumcorner.png') 0 0 no-repeat;
+    height: 262px;
+    margin: 0 auto;
+    text-indent: -999999px;
+    width: 285px;
+  }
+
+  .content {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .arrow {
+    background: url('../images/arrown_down_white.png') 0 0 no-repeat;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 29px;
+    height: 18px;
+    margin-left: -9px;
+  }
+}
+
+.hoof-info {
+  background: url('../images/intro_rhumcorner.jpg') 0 0 repeat;
+  color: #fff;
+
+  .content {
+    display: flex;
+    padding: 95px 0;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .hoof-info-left,
+  .hoof-info-right {
+    padding: 0 20px;
+  }
+
+  .hoof-info-left {
+    width: 35%;
+    padding-right: 50px;
+  }
+
+  .hoof-info-right {
+    width: 65%;
+  }
+
+  .hoof-intro-copy {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    margin-bottom: 75px;
+  }
+
+  .hoof-info-hours {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-family: $rockSalt;
+    border-bottom: 1px solid #fff;
+    padding: 0 0 20px 0;
+    margin-bottom: 75px;
+
+    td:last-child {
+      text-align: right;
+    }
+
+    &:after {
+      position: absolute;
+      content: "* cash and Canadian debit only. No reservations.";
+      font-size: 12px;
+      bottom: -25px;
+      font-family: $courier;
+    }
+  }
+
+  .btn {
+    background: #40560f;
+    color: #7ca41e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: $permanentMarket;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: #ffd998;
+    }
+  }
+}
+
+.hoof-menu-drinks {
+  background: url('../images/rhum_drinks.jpg') 0 0 repeat;
+  background-size: cover;
+
+  .content {
+    padding: 65px 0;
+  }
+
+  .cocktail-bar-menu__content {
+    padding: 0 20px;
+  }
+
+  .cocktail-bar-menu__intro {
+    text-align: center;
+    margin-bottom: 40px;
+    h2 {
+      font-size: 40px;
+      font-family: $londrina;
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  h3 {
+    padding: 0 0 15px 0;
+    margin: 65px 0 30px 0;
+    font-size: 30px;
+    font-family: $londrina;
+    font-weight: normal;
+    border-bottom: 1px solid #000;
+  }
+
+  .cocktail-bar-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cocktail-bar-menu__list-item {
+    padding: 0 5%;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .cocktail-bar-menu__list-item-name {
+    display: block;
+    padding: 0 0 15px 0;
+    font-size: 24px;
+    font-family: $permanentMarket;
+
+    span {
+      padding: 10px 0 0 0;
+      display: block;
+      font-size: 13px;
+      line-height: 16px;
+      font-family: "Courier", Arial, sans-serif;
+    }
+  }
+
+  .cocktail-bar-menu__list-item-price {
+    font-family: $permanentMarket;
+    font-size: 18px;
+    &:before {
+      content: "- ";
+    }
+  }
+}
+
+.hoof-menu-snacks {
+  background: url('../images/rhum_food.jpg') 0 0 repeat;
+  background-size: cover;
+  color: #fff1d9;
+
+  h2 {
+    font-family: $permanentMarket;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 0;
+  }
+
+  .content {
+    padding: 65px 0;
+    text-align: center;
+  }
+
+  .cocktail-bar-menu__content {
+    padding: 0 20px;
+    display: flex;
+    .cocktail-bar-menu__snacks,
+    .cocktail-bar-menu__plates {
+      padding: 0 20px;
+      width: 50%;
+    }
+    ul {
+      font-family: $permanentMarket;
+      font-size: 28px;
+      li {
+        margin: 0 0 30px 0;
+        line-height: 100%;
+      }
+    }
+
+    .cocktail-bar-menu__list-item-price {
+      &:before {
+        content: " _";
+      }
+    }
+  }
+}
+
+footer {
+  background: url('../images/intro_blackhoof.jpg') 0 0 repeat;
+  color: #fff;
+
+  .content {
+    display: flex;
+    padding: 80px 0;
+  }
+
+  .footer-left,
+  .footer-right {
+    padding: 0 20px;
+  }
+
+  .footer-left {
+    width: 20%;
+    padding-right: 50px;
+
+    .btn {
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-family: $pt;
+      display: inline-block;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+
+      &:hover {
+        background: #d80029;
+        color: #fff;
+      }
+    }
+  }
+
+  .footer-right {
+    background: url('../images/map.gif') right center no-repeat;
+    width: 80%;
+    height: 500px;
+    position: relative;
+
+    .cocktail {
+      position: absolute;
+      right: 0;
+      top: 245px;
+    }
+
+    .rhum {
+      position: absolute;
+      right: 50px;
+      top: -20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hoof-info {
+    .content {
+      flex-direction: column;
+    }
+    .hoof-info-left,
+    .hoof-info-right {
+      width: 90%;
+      padding: 0 5%;
+    }
+
+    .hoof-info-left {
+      margin-bottom: 50px;
+    }
+
+    .hoof-info-hours {
+      font-size: 11px;
+    }
+  }
+
+  .hoof-menu-drinks {
+    .content {
+      padding: 65px 0;
+    }
+
+    .cocktail-bar-menu__content {
+      padding: 0 20px;
+    }
+
+    .cocktail-bar-menu__intro {
+      background: none;
+      padding: 20px 0;
+    }
+
+    .cocktail-bar-menu__list {
+      flex-direction: column;
+    }
+
+    .cocktail-bar-menu__list-item {
+      width: 90%;
+      padding: 0 5%;
+    }
+  }
+
+  .hoof-menu-snacks {
+    .cocktail-bar-menu__content {
+      flex-direction: column;
+      ul {
+        margin: 0;
+        li {
+          width: 100%;
+        }
+      }
+      .cocktail-bar-menu__snacks,
+      .cocktail-bar-menu__plates {
+        width: auto;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  footer {
+    .content {
+      flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right {
+      padding: 0 20px;
+    }
+
+    .footer-left {
+      width: 90%;
+      padding: 0 5%;
+      margin-bottom: 50px;
+    }
+
+    .footer-right {
+      display: none;
+    }
+  }
+}

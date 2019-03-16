@@ -1,0 +1,93 @@
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %meta{name: "description", content: ""}
+
+    %title Rhum Corner
+    %link{rel: "stylesheet", type: "text/css", media: "all", href: "public/assets/css/index.css"}
+
+    %body
+      %header
+        %nav
+          %ul
+            %li
+              %a{href: "http://theblackhoof.com/"} The Black Hoof
+            %li
+              %a{href: "http://hoofcocktailbar.com/"} Cocktail Bar
+            %li
+              %a{href: "http://rhumcorner.com/"} Rhum Corner
+        .content
+          %h1 Rhum Corner
+          %span.arrow
+      %section.hoof-info
+        .content
+          .hoof-info-left
+            .hoof-intro-copy
+              %h1 OPENED IN LATE SEPT 2013
+              %p Rhum Corner, the name came from Jen's husband Roland drinking rum and cokes at Cocktail Bar and serving them up for friends in the know, in the corner. Rhum Corner the concept came from Jen and Roland's long considered idea to do a Haitian restaurant, with a cool atmosphere. It's hard to use the word "cool" without feeling like a douche, but that's the concept. Cheap and tasty food, fun drinks, like frescos and slushies and buckets of rhum. So much rhum.
+            %h2 come eat.
+            %address
+              926 Dundas Street West
+              %br
+              Toronto ON M6J 1W3
+              %br
+              %br
+              647 346 9356
+            %p (before you contact us, you should know that we don't take reservations)
+            %a{href: "#map", class: "btn"} Map
+          .hoof-info-right
+            %h2 dinner hours
+            %table.hoof-info-hours
+
+            %h2 popular questions
+            .hoof-info-links
+              %a{href: "#food", class: "btn"} What am i eating
+              %br
+              %a{href: "#drinks", class: "btn"} What am i drinking
+              %br
+              %a{href: "#map", class: "btn"} Where is this place
+      %section.hoof-menu-snacks
+        %a{name: "food"}
+        .content
+          .cocktail-bar-menu__content
+            .cocktail-bar-menu__snacks
+              %h2 Snacks
+              %ul.cocktail-bar-menu__list
+            .cocktail-bar-menu__plates
+              %h2 Plates
+              %ul.cocktail-bar-menu__list
+      %section.hoof-menu-drinks
+        %a{name: "drinks"}
+        .content
+          .cocktail-bar-menu__content
+            .cocktail-bar-menu__intro
+              %h2 Drinks
+              %p get 'em down
+            .cocktail-bar-menu__drinks
+              %ul.cocktail-bar-menu__list
+      %footer
+        %a{name: "map"}
+        .content
+          .footer-left
+            %h2 Drop by.
+            %p Rhum Corner and the Hoof Cocktail Bar are conveniently located at Grace St. and Dundas St. West
+            %p It's not unusual to start and finish at any combination of these lovely establishments.
+            %a{href: "https://www.google.com/maps/place/Rhum+Corner/@43.6510095,-79.4153965,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34e54758d513:0x6b49ee585dddaa1b!8m2!3d43.6510056!4d-79.4132025", class: "btn", target: "blank"} Google Map
+          .footer-right
+            %address.cocktail
+              %h3 Cocktail Bar
+              923 Dundas St. West
+              %br
+              Toronto ON M6J 1W2
+              %br
+              416 792 7511
+            %address.rhum
+              %h3 Rhum Corner
+              926 Dundas St. West
+              %br
+              Toronto ON M6J 1W3
+              %br
+              647 346 9356
+  %script{ src: "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"}
+  %script{ src: "public/assets/js/index.js" }
