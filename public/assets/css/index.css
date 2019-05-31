@@ -100,6 +100,9 @@ header {
   .hoof-info .hoof-info-left,
   .hoof-info .hoof-info-right {
     padding: 0 20px; }
+    .hoof-info .hoof-info-left p a,
+    .hoof-info .hoof-info-right p a {
+      color: #fff; }
   .hoof-info .hoof-info-left {
     width: 35%;
     padding-right: 50px; }
@@ -122,7 +125,7 @@ header {
       text-align: right; }
     .hoof-info .hoof-info-hours:after {
       position: absolute;
-      content: "* cash and Canadian debit only. No reservations.";
+      content: "* we accept cash, VISA, Mastercard and American Express.";
       font-size: 12px;
       bottom: -25px;
       font-family: "Courier", Arial, sans-serif; }

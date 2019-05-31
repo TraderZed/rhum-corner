@@ -88,6 +88,10 @@ header {
   .hoof-info-left,
   .hoof-info-right {
     padding: 0 20px;
+    
+    p a {
+      color: #fff;
+    }
   }
 
   .hoof-info-left {
@@ -121,7 +125,7 @@ header {
 
     &:after {
       position: absolute;
-      content: "* cash and Canadian debit only. No reservations.";
+      content: "* we accept cash, VISA, Mastercard and American Express.";
       font-size: 12px;
       bottom: -25px;
       font-family: $courier;
