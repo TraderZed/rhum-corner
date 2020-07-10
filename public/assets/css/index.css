@@ -108,6 +108,10 @@ header {
     padding-right: 50px; }
   .hoof-info .hoof-info-right {
     width: 65%; }
+    .hoof-info .hoof-info-right .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
   .hoof-info .hoof-intro-copy {
     border-bottom: 1px solid #fff;
     padding-bottom: 20px;
@@ -125,7 +129,7 @@ header {
       text-align: right; }
     .hoof-info .hoof-info-hours:after {
       position: absolute;
-      content: "* we accept cash, VISA, Mastercard and American Express.";
+      content: "* we accept debit, VISA, Mastercard and American Express.";
       font-size: 12px;
       bottom: -25px;
       font-family: "Courier", Arial, sans-serif; }

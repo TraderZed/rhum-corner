@@ -88,7 +88,7 @@ header {
   .hoof-info-left,
   .hoof-info-right {
     padding: 0 20px;
-    
+
     p a {
       color: #fff;
     }
@@ -101,6 +101,12 @@ header {
 
   .hoof-info-right {
     width: 65%;
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   .hoof-intro-copy {
@@ -125,7 +131,7 @@ header {
 
     &:after {
       position: absolute;
-      content: "* we accept cash, VISA, Mastercard and American Express.";
+      content: "* we accept debit, VISA, Mastercard and American Express.";
       font-size: 12px;
       bottom: -25px;
       font-family: $courier;
