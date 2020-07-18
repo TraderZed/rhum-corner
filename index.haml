@@ -39,8 +39,6 @@
           .hoof-info-right
             .title-wrapper
               %h2 dinner hours
-              %a{href: "https://order.tbdine.com/rhum-corner?src=3", target: "_blank"}
-                %img{alt: "Order Online", src: "https://singleapp.com/images/external/medium-button_order-online_en.png"}/
 
             %table.hoof-info-hours
 
@@ -93,3 +91,6 @@
               Toronto ON M6J 1W3
   %script{ src: "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"}
   %script{ src: "public/assets/js/index.js" }
+  %script{src: "https://rhumcorner.ambassador.ai/widget/ambassador-chat.js"}
+  :javascript
+    AmbassadorChat.init({ domain: 'rhumcorner.ambassador.ai' });
