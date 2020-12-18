@@ -47,9 +47,13 @@ header {
   h1 {
     background: url('../images/main_rhumcorner.png') 0 0 no-repeat;
     height: 262px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     text-indent: -999999px;
     width: 285px;
+  }
+
+  a {
+    color: #fff;
   }
 
   .content {
